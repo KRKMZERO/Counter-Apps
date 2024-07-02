@@ -17,7 +17,7 @@ jobs:
         pip install pyinstaller
     - name: Build executable
       run: |
-        pyinstaller --onefile counter_app.py
+        pyinstaller --onefile counter app.py
     - name: Upload executable
       uses: actions/upload-artifact@v2
       with:
