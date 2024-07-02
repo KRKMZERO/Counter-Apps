@@ -17,9 +17,9 @@ jobs:
         pip install pyinstaller
     - name: Build executable
       run: |
-        pyinstaller --onefile counter_apps.py
+        pyinstaller --onefile Counter_Apps.py
     - name: Upload executable
       uses: actions/upload-artifact@v2
       with:
         name: CounterApp
-        path: dist/counter_apps.exe
+        path: dist/Counter_Apps.exe
